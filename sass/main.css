@@ -1,0 +1,138 @@
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/top.webp);
+  background-size: cover;
+}
+
+.top__nav {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 5vw;
+  height: 40vw;
+  background-color: whitesmoke;
+  border-radius: 100vh;
+  margin-right: 3vw;
+}
+
+.top__i {
+  display: block;
+  font-size: 2.5vw;
+  padding: 2vw 1vw;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5 ease-out;
+}
+
+.top__i:hover{
+  transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+}
+
+.top__fav-container {
+  position: absolute;
+  top: 80%;
+  left: 50vw;
+  transform: translate(-50%,-50%);
+  margin: 0 auto;
+}
+
+.top__fav-img {
+  width: 2vw;
+  height: 2vw;
+}
+
+.top__fav-img:hover {
+  transform: scale(1.2);
+  transition: 1s;
+  -webkit-transform: scale(1.25);
+}
+
+.top__fav-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top__fav-group {
+  display: flex;
+}
+
+.top__fav-item {
+  margin: 0 1vw;
+  padding: 1vw 2vw;
+  border-radius: 20px 20px;
+  background-color: rgba(255, 255, 255, 0.527);
+}
+
+.top__scroll-container {
+  position: absolute;
+  left: 50%;
+  top: 95%;
+  transform: translate(-50%,-50%);
+}
+
+.genre {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  height: 70vh;
+}
+
+.genre__content {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2vw;
+}
+
+.genre__pic {
+  display: block;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+}
+
+.genre__content:nth-child(1) {
+  transition-delay: 0.4s;
+}
+.genre__content:nth-child(2) {
+  transition-delay: 0.8s;
+}
+.genre__content:nth-child(3) {
+  transition-delay: 1.2s;
+}
+.genre__content:nth-child(4) {
+  transition-delay: 1.6s;
+}
+.genre__content:nth-child(5) {
+  transition-delay: 2.0s;
+}
+
+
+.v-enter-active{
+  transition: opacity 2.0s;
+}
+
+.v-leave-active {
+  transition: opacity 0.1s;
+}
+
+.v-enter, .v-leave-to{
+  opacity: 0;
+}
